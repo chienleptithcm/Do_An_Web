@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Poppins:ital,wght@0,200;0,300;0,500;1,200&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.side_bar {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #000;
+  position: fixed; /* Cố định sidebar */
+  top: 0; /* Duyệt về phía trên */
+  left: 0;
+  right: 0;
+}
+.side_bar-items a {
+  font-family: var(--font-family);
+  text-decoration: none;
+  padding: 0px 10px;
+  color: #fcfbfb;
+  line-height: 80px;
+  font-size: 14px;
+}
+.side_bar-items {
+  padding-left: 100px;
+}
+.side_bar-items i {
+  font-size: 10px;
+}
+.side_bar-logo .logo {
+  margin-left: 160px;
+  margin-top: 20px;
+}
+/* ------ Viết CSS Dưới Này ------------ */

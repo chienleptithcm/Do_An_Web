@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=EB+Garamond&family=Heebo&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Poppins:ital,wght@0,200;0,300;0,500;1,200&family=Space+Grotesk&family=Tangerine:wght@700&display=swap");
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.side_bar {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #000;
+  position: fixed; /* Cố định sidebar */
+  top: 0; /* Duyệt về phía trên */
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.side_bar-items a {
+  font-family: var(--font-family);
+  text-decoration: none;
+  padding: 0px 10px;
+  color: #fcfbfb;
+  line-height: 80px;
+  font-size: 14px;
+}
+.side_bar-items {
+  padding-left: 100px;
+}
+.side_bar-items i {
+  font-size: 10px;
+}
+.side_bar-logo .logo {
+  margin-left: 160px;
+  margin-top: 20px;
+}
+/* Home */
+.home_content {
+}
+/* img-list */
+.img_list {
+  height: 800px;
+  background-image: url(/img/pexels-daniel-reche-1556698.jpg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.img_list-content {
+  color: #fcfbfb;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 300px;
+}
+.img_list-content h3 {
+  font-family: "Dancing Script", cursive;
+  color: rgba(255, 180, 97, 255);
+  font-size: 35px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+.img_list-content p {
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.img_list-content a {
+  text-decoration: none;
+  border: solid 2px #ffff;
+  padding: 10px 20px;
+  font-family: var(--font-family);
+  color: #fff;
+  transition: 0.3s;
+}
+.img_list-content a:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+#about_us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+/* Content */
+#about_us .content {
+  width: 50%;
+  margin: auto;
+}
+.content h2 {
+  font-size: 35px;
+  margin-top: 0;
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+.content h3 {
+  font-size: 50px;
+  color: rgba(255, 180, 97, 255);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.content p {
+  font-size: 18px;
+  color: rgb(145, 143, 141);
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+.content a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 3px solid #cfa670;
+  transition: 0.5s;
+}
+/* Hover */
+.content a:hover {
+  color: #cfa670;
+}
+.content_img {
+  display: flex;
+  margin-top: 80px;
+}
+.img_item {
+  margin-right: 10px;
+}
+.img_item img {
+  border-radius: 10px;
+}
+/* special_content */
+.special_content {
+  background-image: url(/img/parallax-1.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.title_special h3 {
+  font-family: "Dancing Script", cursive;
+  color: rgba(255, 180, 97, 255);
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+.title_special p {
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  font-size: 50px;
+}
+/* --------- List_dishes ------------ */
+
+.list_dishes {
+  padding-top: 80px;
+  margin-bottom: 120px;
+}
+
+.menu_dishes {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.menu_dishes h3 {
+  font-size: 40px;
+  color: rgba(255, 180, 97, 255);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.menu_title {
+  text-align: center;
+}
+.menu_dishes p {
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  font-size: 40px;
+  padding: 10px 10px;
+}
+
+.menu_title p img {
+  vertical-align: middle;
+}
+.menu_title p span {
+  padding: 0 10px;
+}
+.menu_title p {
+  margin: 0;
+}
+/* ------------------------------- */
+#carousel-container {
+  overflow: hidden;
+  width: 86%; /* Kích thước mỗi slice */
+  margin: auto;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin: auto;
+}
+
+.slice {
+  width: 340px; /* Kích thước mỗi slice */
+  margin-right: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.slice h3 {
+  padding-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+.slice p {
+  font-family: var(--font-family);
+  color: #999;
+  font-weight: 500;
+  font-size: 14px;
+}
+#list_container {
+  display: flex;
+  align-items: center;
+}
+#list_container i {
+  font-size: 40px;
+  padding: 20px;
+  color: rgba(255, 180, 97, 255) !important;
+}
+.slice span {
+  color: #ffffff;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 14px;
+  top: 20px;
+  left: 20px;
+  word-spacing: 5px;
+  position: absolute;
+  background-color: #cfa670;
+  border: solid 2px #cfa670;
+  z-index: 1;
+}
+/* -------------------------------- */
+.special_title {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  width: 100%;
+  height: 548px;
+}
+.special_title-content {
+  background-image: url(/img/bg02.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.special_title-content h3 {
+  font-family: "Dancing Script", cursive;
+  color: rgba(255, 180, 97, 255);
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+.special_title-content p {
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  font-size: 50px;
+}
+/* -------------------------------------- */
+.discover_title {
+  padding-top: 80px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.discover_title h3 {
+  font-size: 50px;
+  color: rgba(255, 180, 97, 255);
+  font-family: "Tangerine", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.discover_title p {
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  font-size: 40px;
+  margin-top: 0;
+}
+.discover_list {
+  width: 80%;
+  margin: auto;
+}
+.discover_list {
+  margin-top: 30px;
+}
+.discover_list ul {
+  margin-bottom: 10px;
+}
+.discover_list ul li {
+  display: inline-block;
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0 20px;
+  font-weight: 600;
+  color: rgb(78, 78, 78);
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 3px solid #fffefe;
+}
+.discover_list li:hover {
+  border-bottom: 3px solid #cfa670;
+}
+.discover_content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.discover_items-sub {
+  display: flex;
+}
+.discover_item {
+  padding-bottom: 20px;
+}
+.discover_list-items{
+  padding: 0 20px;
+}
+.discover_items-sub p,
+.price {
+  padding-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.dotted-line {
+  border: 1px dotted #cfa670; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
+  width: 100%; /* Độ dài của đường line */
+  height: 0;
+  margin-top: 38px;
+  margin-right: 10px;
+}
+.details {
+  color: rgb(145, 143, 141);
+  font-weight: 500;
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+.more_details {
+  background-color: #000;
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+.more_details:hover{
+  background-color: #cfa670;
+}
+.more_details a {
+  font-family: var(--font-family);
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 45px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.hover-element.active{
+  border-bottom: 3px solid #cfa670;
+}
