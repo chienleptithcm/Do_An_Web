@@ -342,7 +342,7 @@ body {
 .discover_item {
   padding-bottom: 20px;
 }
-.discover_list-items{
+.discover_list-items {
   padding: 0 20px;
 }
 .discover_items-sub p,
@@ -371,9 +371,11 @@ body {
   text-align: center;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 100px;
 }
-.more_details:hover{
+.more_details:hover {
   background-color: #cfa670;
+
 }
 .more_details a {
   font-family: var(--font-family);
@@ -384,6 +386,39 @@ body {
   line-height: 45px;
   border: 2px solid rgba(255, 255, 255, 0);
 }
-.hover-element.active{
-  border-bottom: 3px solid #cfa670;
+/* -------------------------------------------- */
+.restaurant_gallery
+{
+  margin-bottom: 200px;
+}
+.gallety_title {
+  background-color: #000;
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0px;
+}
+.gallery_img{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+}
+.gallery_img div{
+  text-align: center;
+}
+.gallery_img div img{
+  width: 100%;
+}
+/* ----------------------------FEED BACK-------------------------------- */
+.feedback_container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.feedback_img div
+{
+  display: inline-block;
+}
+.feedback_title
+{
+
 }
