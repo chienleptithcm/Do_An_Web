@@ -461,3 +461,42 @@ body {
 {
   color: #696565;
 }
+.post p{
+  border-bottom: solid 1px #636363;
+  padding: 15px 0px;
+}
+.post h3{
+  color:#fff;
+  font-size: 18px;
+  font-family: var(--font-family)
+  
+}
+.opening_hours{
+  color: #636363;
+}
+.opening_hours div p{
+  padding: 15px 0px;
+}
+.opening_hours a{
+  border-bottom: solid 2px #cfa670;
+  text-decoration: none;
+  font-family: var(--font-family);
+  color:#fff;
+  font-size: 16px;
+}
+.opening_hours a:hover{
+  color:#cfa670;
+}
+.opening_hours h3{
+  color: #fff;
+  font-size: 18px;
+}
+.opening_hours .discover_item{
+  padding-bottom: 0;
+  font-family: var(--font-family);
+}
+.opening_hours .discover_item .dotted-line{
+  margin-top: 30px;
+  margin-left: 5px;
+  border: dotted 1px #636363;
+}
