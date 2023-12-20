@@ -375,7 +375,6 @@ body {
 }
 .more_details:hover {
   background-color: #cfa670;
-
 }
 .more_details a {
   font-family: var(--font-family);
@@ -387,8 +386,7 @@ body {
   border: 2px solid rgba(255, 255, 255, 0);
 }
 /* -------------------------------------------- */
-.restaurant_gallery
-{
+.restaurant_gallery {
   margin-bottom: 200px;
 }
 .gallety_title {
@@ -399,26 +397,67 @@ body {
   text-align: center;
   padding: 50px 0px;
 }
-.gallery_img{
+.gallery_img {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
 }
-.gallery_img div{
+.gallery_img div {
   text-align: center;
 }
-.gallery_img div img{
+.gallery_img div img {
   width: 100%;
 }
 /* ----------------------------FEED BACK-------------------------------- */
-.feedback_container{
+.feedback_container {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.feedback_img div
-{
+.feedback_img div {
   display: inline-block;
 }
-.feedback_title
+.feedback_title {
+}
+/* -------------FOOTER------------------ */
+.footer {
+  background: #000;
+}
+.footer_container{
+  padding-top:80px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%; /* Chia thành 2 cột bằng nhau */
+  margin: auto;
+  padding-bottom: 100px;
+}
+.rodich{
+  color: #696565;
+  text-align: center;
+  font-size:15px;
+  padding-left: 20px;
+}
+.rodich_title{
+  padding-bottom: 15px;
+}
+.rodich_icon{
+  margin-top: 30px;
+}
+.rodich_icon a{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #363636;
+  color: #696565;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.rodich_icon a:hover{
+  background-color: #cfa670;
+  color: #fff;
+}
+.rodich_container{
+  width: 80%;
+  text-align: left;
+}
+.post
 {
-
+  color: #696565;
 }
