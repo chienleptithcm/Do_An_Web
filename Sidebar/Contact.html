@@ -1,34 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Contact/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/Contact/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Lato&family=Open+Sans:wght@600&family=Oswald:wght@400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Satisfy&display=swap"
+    rel="stylesheet">">
 </head>
+
 <body>
-    <div class="side_bar">
-        <!-- SIDE_BAR-LOGO -->
-        <div class="side_bar-logo"> <!-- 40% width -->
-          <div class="logo">
-            <img src="/img/logo.webp" alt="">
-          </div>
-          <!-- Your main content goes here -->
+  <div class="side_bar">
+    <!-- SIDE_BAR-LOGO -->
+    <div class="side_bar-logo"> <!-- 40% width -->
+      <div class="logo">
+        <img src="/img/logo.webp" alt="">
+      </div>
+      <!-- Your main content goes here -->
+    </div>
+
+    <!-- SIDE_BAR-ITEMS -->
+    <div class="side_bar-items"> <!-- 60% width -->
+      <a href="Home.html">Home</a>
+      <a href="Menu.html">Menu</a>
+      <a href="Reservation.html">Reservation <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="Page.html">Page <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="Blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a>
+      <a href="Contact.html">Contact</a>
+      <a href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 13px;"></i></a>
+      <a href=""><i class="fa-solid fa-bag-shopping" style="font-size: 13px;"></i></a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <!-- Phần này là phía bên tay trái -->
+  <div class="contact__wrap">
+    <div class="container">
+      <div class="contact__des">
+        <!-- Này là cái tiêu đề -->
+        <div class="contact-title">
+          <h3>GET IN TOUCH</h3>
         </div>
-  
-        <!-- SIDE_BAR-ITEMS -->
-        <div class="side_bar-items"> <!-- 60% width -->
-          <a href="Home.html">Home</a>
-          <a href="Menu.html">Menu</a>
-          <a href="Reservation.html">Reservation <i class="fa-solid fa-chevron-down"></i></a>
-          <a href="Page.html">Page <i class="fa-solid fa-chevron-down"></i></a>
-          <a href="Blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
-          <a href="shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a>
-          <a href="Contact.html">Contact</a>
-          <a href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 13px;"></i></a>
-          <a href=""><i class="fa-solid fa-bag-shopping" style="font-size: 13px;"></i></a>
+        <!-- Đoạn văn phía dưới tiêu đề -->
+        <p>We love hearing from customers, visitors and people from the Rodich. We really appreciate you taking the time
+          to
+          get in
+          touch. Please fill in the form below.</p>
+        <!-- Phần này là mấy cái email sdt -->
+        <div class="contact">
+          <div class="contact-title">Address: </div>
+          <div class="contact-content">345 Park Avenue, San Jose, CA 95110, United Kindon(UK)</div>
+        </div>
+        <div class="contact">
+          <div class="contact-title">Phone: </div>
+          <div class="contact-content">+44 023 456 78</div>
+        </div>
+        <div class="contact">
+          <div class="contact-title">Email: </div>
+          <div class="contact-content">Yourdomain@rodich.com</div>
+        </div>
+        <!-- Phần này là mấy logo icon -->
+        <div class="contact__icon">
+          <div class="contact__icon-item">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="contact__icon-item">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="contact__icon-item">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="contact__icon-item">
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
         </div>
       </div>
-    This is contact page
+      <!-- Đây là phần bên phải -->
+      <div class="contact__form">
+        <div class="email-name">
+          <input class="contact__item" type="text" placeholder="Name*">
+          <input class="contact__item" type="text" placeholder="Email*">
+        </div>
+        <input class="contact__item contact__subject" type="text" placeholder="Subject*">
+        <textarea class="contact__item contact__area" name="" id="" rows="13" placeholder="Message*"></textarea>
+        <button>Send Message</button>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
