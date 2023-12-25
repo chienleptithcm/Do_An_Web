@@ -1,40 +1,316 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Poppins:ital,wght@0,200;0,300;0,500;1,200&display=swap");
 
 :root {
-  --font-family: "Poppins", sans-serif;
+    --font-family: "Poppins", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
 }
 
 .side_bar {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  background-color: #000;
-  position: fixed; /* Cố định sidebar */
-  top: 0; /* Duyệt về phía trên */
-  left: 0;
-  right: 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #000;
+    position: fixed; /* Cố định sidebar */
+    top: 0; /* Duyệt về phía trên */
+    left: 0;
+    right: 0;
 }
 .side_bar-items a {
-  font-family: var(--font-family);
-  text-decoration: none;
-  padding: 0px 10px;
-  color: #fcfbfb;
-  line-height: 80px;
-  font-size: 14px;
+    font-family: var(--font-family);
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #fcfbfb;
+    line-height: 80px;
+    font-size: 14px;
 }
 .side_bar-items {
-  padding-left: 100px;
+    padding-left: 100px;
 }
 .side_bar-items i {
-  font-size: 10px;
+    font-size: 10px;
 }
 .side_bar-logo .logo {
-  margin-left: 160px;
-  margin-top: 20px;
+    margin-left: 160px;
+    margin-top: 20px;
 }
 /* ------ Viết CSS Dưới Này ------------ */
+a {
+    text-decoration: none;
+}
+
+.blog {
+    margin-top: 120px;
+    font-family: "Cabin", sans-serif;
+}
+.blog a:hover {
+    color: #cfa670;
+}
+.text-color-grey {
+    color: #777777;
+}
+.text-color-black {
+    color: #151515;
+}
+.container {
+    width: 1140px;
+}
+.blog > .container {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+.blog__left {
+    flex: 3;
+}
+.blog__item-img {
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+.blog-des-info {
+    flex: 1;
+    line-height: 24px;
+}
+.blog-des-info a {
+    color: #151515;
+}
+.blog__item-des {
+    display: flex;
+}
+.blog-des-detail {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.blog-detail-title h3 {
+    margin: 0;
+    font-family: Oswald;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+.blog-detail-title a {
+    color: #222222;
+}
+.blog-des-more a {
+    color: #cfa670;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.blog-des-more a:hover {
+    color: #9a7a53;
+}
+.blog__item {
+    padding: 40px 0;
+    border-bottom: 1px dashed #cbcbcb;
+}
+
+.blog__right {
+    flex: 1;
+    padding: 40px 0;
+}
+.search {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    color: #777777;
+}
+.search input {
+    padding: 15px;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+}
+.search button {
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #777777;
+}
+.blog__right-title h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 40px 0 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.post-category ul {
+    padding-left: 16px;
+}
+.post-category-list li,
+.recent-post-list li {
+    line-height: 40px;
+}
+.blog__right a {
+    color: #777777;
+}
+.recent-post-list li,
+.tag-list li {
+    list-style: none;
+}
+.recent-post-list,
+.tag-list {
+    padding-left: 0;
+}
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag-list li {
+    padding: 10px 17px;
+    border: 1px solid #e0e0e0;
+}
+.tag-list a {
+    color: #151515;
+}
+/* -------FOOTER ---------- */
+.footer {
+  background: #000;
+}
+.footer_container{
+  padding-top:80px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%; /* Chia thành 2 cột bằng nhau */
+  margin: auto;
+  padding-bottom: 100px;
+}
+.rodich{
+  color: #696565;
+  text-align: center;
+  font-size:15px;
+  padding-left: 20px;
+}
+.rodich_title{
+  padding-bottom: 15px;
+}
+.rodich_icon{
+  margin-top: 30px;
+}
+.rodich_icon a{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #363636;
+  color: #696565;
+  margin-right: 10px;
+  font-size: 12px;
+  transition: 0.5s;
+}
+.rodich_icon a:hover{
+  background-color: #cfa670;
+  color: #fff;
+}
+.rodich_container{
+  width: 80%;
+  text-align: left;
+}
+.post
+{
+  color: #696565;
+}
+.post p{
+  border-bottom: solid 1px #303030;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.post h3{
+  color:#fff;
+  font-size: 18px;
+  font-family: var(--font-family);
+
+}
+.flickr{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.flickr_img{
+  display: grid;
+  grid-template-rows: repeat(2, auto); /* Ba hàng với chiều cao tự động */
+  grid-template-columns: repeat(3, 1fr); /* Hai cột với chiều rộng tự động chia đều */
+}
+.flickr h3{
+  color: #fff;
+  font-size: 18px;
+  padding-bottom:10px;
+}
+.flickr_img img{
+  width: 100%;
+}
+.flickr_img div{
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.opening_hours{
+  color: #636363;
+}
+.opening_hours div p{
+  padding: 15px 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.opening_hours a{
+  border-bottom: solid 2px #cfa670;
+  text-decoration: none;
+  font-family: var(--font-family);
+  color:#fff;
+  font-size: 16px;
+}
+.opening_hours a:hover{
+  color:#cfa670;
+}
+.opening_hours h3{
+  color: #fff;
+  font-size: 18px;
+}
+.opening_hours .discover_item{
+  padding-bottom: 0;
+  font-family: var(--font-family);
+}
+.opening_hours .discover_item .dotted-line{
+  margin-top: 30px;
+  margin-left: 5px;
+  border: dotted 1px #636363;
+}
+.discover_items-sub{
+  display: flex;
+}
+.dotted-line{
+  border: 1px dotted #cfa670; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
+  width: 100%; /* Độ dài của đường line */
+  height: 0;
+  margin-top: 38px;
+  margin-right: 10px;
+}
+/* --------------------------------------------- */
+.footer_contact{
+  background-color: #101010;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.footer_link{
+  text-align: right;
+  padding-right: 100px;
+}
+.footer_link a{
+  margin-right: 10px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  font-family: var(--font-family);
+  font-size: 14px;
+  transition: 0.5s;
+}
+.footer_link a:hover{
+  color: #fff;
+}

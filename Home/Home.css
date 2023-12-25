@@ -262,7 +262,6 @@ body {
 /* -------------------------------- */
 .special_title {
   background-color: rgba(0, 0, 0, 0.5);
-  background-size: cover;
   width: 100%;
   height: 548px;
 }
@@ -396,16 +395,45 @@ body {
   font-size: 30px;
   text-align: center;
   padding: 50px 0px;
+
 }
 .gallery_img {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+  grid-template-columns: repeat(4, 1fr);
+ /* Chia thành 4 cột bằng nhau */
 }
 .gallery_img div {
+  position: relative;
+
+}
+.gallery_img div p{
   text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  font-size: 20px;
+  transition: 0.5s;
+  display: none;
+}
+.gallery_img div {
+  overflow: hidden;
+  height: 100%; 
+  width:  100%; 
 }
 .gallery_img div img {
   width: 100%;
+  height: 100%;
+  transition: 0.5s; 
+  display: block;
+}
+.gallery_img div:hover img{
+  transform: scale(1.2);
+}
+.gallery_img div:hover p{
+  display: block;
 }
 /* ----------------------------FEED BACK-------------------------------- */
 .feedback_container {
@@ -415,115 +443,266 @@ body {
 .feedback_img div {
   display: inline-block;
 }
-.feedback_title {
+.feedback {
+  padding-bottom: 150px;
+}
+.feedback_content{
+  padding-left: 50px;
+}
+.feedback_content .dotted-line{
+  width: 95%;
+  margin-top: 30px;
+}
+.feedback_title h2{
+  font-size: 50px;
+  color: rgba(255, 180, 97, 255);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+.feedback_title h3{
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  font-size: 35px;
+  margin-top: 0;
+}
+.feedback_title p{
+  color: #888;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* ------------- FIND US --------------- */
+.find_us {
+  background-image: url(/img/bg001.webp);
+  background-size: cover;
+  margin-bottom: 50px;
+  height: 300px;
+}
+.bg_us {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.find_title {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 80px;
+}
+.find_title div h3 {
+  font-size: 40px;
+  color: rgba(255, 180, 97, 255);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.find_title div p {
+  font-family: "Oswald", sans-serif;
+  color: #f0f0f0;
+  font-size: 35px;
+}
+.find_btn {
+  border: solid none #cfa670;
+  background-color: #cfa670;
+  padding: 15px 20px;
+  margin-left: 150px;
+  transition: 0.5s;
+}
+.find_btn a {
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+.find_btn:hover {
+  background-color: #856e50;
+}
+/* ------------BOOKING-TABLE-------------- */
+.booking_table {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.booking_body {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.booking_title h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  font-weight: lighter;
+}
+.booking_title p {
+  color: #888;
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+.find_table {
+  padding: 20px 0px;
+}
+.find_table a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  border: solid 1px #000;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.find_table a:hover{
+  background-color: #cfa670;
+  border: none;
+}
+.find_detail{
+  font-family: var(--font-family);
+  color:#888;
+}
+.find_detail span{
+  color: #cfa670;
+  font-weight: bold;
+  padding: 0 5px;
+}
+.time_booking{
+
 }
 /* -------------FOOTER------------------ */
+
 .footer {
   background: #000;
 }
-.footer_container{
-  padding-top:80px;
+.footer_container {
+  padding-top: 80px;
   width: 90%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%; /* Chia thành 2 cột bằng nhau */
   margin: auto;
   padding-bottom: 100px;
 }
-.rodich{
+.rodich {
   color: #696565;
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
   padding-left: 20px;
 }
-.rodich_title{
+.rodich_title {
   padding-bottom: 15px;
 }
-.rodich_icon{
+.rodich_icon {
   margin-top: 30px;
 }
-.rodich_icon a{
+.rodich_icon a {
   padding: 10px;
   border-radius: 50%;
   background-color: #363636;
   color: #696565;
   margin-right: 10px;
   font-size: 12px;
+  transition: 0.5s;
 }
-.rodich_icon a:hover{
+.rodich_icon a:hover {
   background-color: #cfa670;
   color: #fff;
 }
-.rodich_container{
+.rodich_container {
   width: 80%;
   text-align: left;
 }
-.post
-{
+.post {
   color: #696565;
 }
-.post p{
+.post p {
   border-bottom: solid 1px #303030;
   padding: 15px 0px;
   font-size: 14px;
 }
-.post h3{
-  color:#fff;
+.post h3 {
+  color: #fff;
   font-size: 18px;
   font-family: var(--font-family);
-
 }
-.flickr{
+.flickr {
   margin-right: 20px;
   margin-left: 20px;
 }
-.flickr_img{
+.flickr_img {
   display: grid;
   grid-template-rows: repeat(2, auto); /* Ba hàng với chiều cao tự động */
-  grid-template-columns: repeat(3, 1fr); /* Hai cột với chiều rộng tự động chia đều */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Hai cột với chiều rộng tự động chia đều */
 }
-.flickr h3{
+.flickr h3 {
   color: #fff;
   font-size: 18px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
-.flickr_img img{
+.flickr_img img {
   width: 100%;
 }
-.flickr_img div{
+.flickr_img div {
   margin-right: 10px;
   margin-bottom: 5px;
 }
-.opening_hours{
+.flickr_img div:hover{
+  cursor: pointer;
+}
+.opening_hours {
   color: #636363;
 }
-.opening_hours div p{
+.opening_hours div p {
   padding: 15px 0px;
 }
-.opening_hours a{
+.opening_hours a {
   border-bottom: solid 2px #cfa670;
   text-decoration: none;
   font-family: var(--font-family);
-  color:#fff;
+  color: #fff;
   font-size: 16px;
 }
-.opening_hours a:hover{
-  color:#cfa670;
+.opening_hours a:hover {
+  color: #cfa670;
 }
-.opening_hours h3{
+.opening_hours h3 {
   color: #fff;
   font-size: 18px;
 }
-.opening_hours .discover_item{
+.opening_hours .discover_item {
   padding-bottom: 0;
   font-family: var(--font-family);
 }
-.opening_hours .discover_item .dotted-line{
+.opening_hours .discover_item .dotted-line {
   margin-top: 30px;
   margin-left: 5px;
   border: dotted 1px #636363;
 }
 /* --------------------------------------------- */
-.footer_contact{
+.footer_contact {
   background-color: #101010;
   height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.footer_link {
+  text-align: right;
+  padding-right: 100px;
+}
+.footer_link a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  font-family: var(--font-family);
+  font-size: 14px;
+  transition: 0.5s;
+}
+.footer_link a:hover {
+  color: #fff;
 }
