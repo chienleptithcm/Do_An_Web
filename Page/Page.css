@@ -2,6 +2,7 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
+  --color: #cfa670;
 }
 
 body {
@@ -38,31 +39,161 @@ body {
   margin-top: 20px;
 }
 /* ------ Viết CSS Dưới Này ------------ */
-.page{
+.page {
   color: #cfa670 !important;
 }
-.page_title{
+.page_title {
   background: url(/img/1.webp);
-  margin-top:80px;
+  margin-top: 80px;
 }
-.page_detail{
+.page_detail {
   width: 80%;
   margin: auto;
   text-align: center;
   padding: 30px 0px;
 }
-.page_detail h3{
+.page_detail h3 {
   font-size: 50px;
-  color:#fff;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   font-weight: lighter;
   margin-bottom: 0px;
 }
-.page_detail p{
+.page_detail p {
   font-size: 40px;
   color: #cfa670;
   font-family: "Dancing Script", cursive;
   font-weight: lighter;
   margin-bottom: 50px;
   margin-top: 0;
+}
+/* ------------------------------ */
+#about_us {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding-top: 80px;
+}
+#about_us .content {
+  width: 50%;
+  margin: auto;
+}
+.content h2 {
+  font-size: 35px;
+  margin-top: 0;
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+.content h3 {
+  font-size: 50px;
+  color: var(--color);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.content p {
+  font-size: 18px;
+  color: rgb(145, 143, 141);
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+.content a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 3px solid #cfa670;
+  transition: 0.5s;
+}
+/* Hover */
+.content a:hover {
+  color: #cfa670;
+}
+.content_img {
+  display: flex;
+  margin-top: 80px;
+}
+.img_item {
+  margin-right: 10px;
+}
+.img_item img {
+  border-radius: 10px;
+}
+.content_sign {
+  padding: 10px 0px;
+}
+/* ------------------------------ */
+.modern {
+}
+.modern_contain {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 80px;
+}
+.modern_detail {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.modern_detail h3 {
+  font-size: 50px;
+  color: var(--color);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.modern_detail h2 {
+  font-size: 40px;
+  margin-top: 0;
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+.modern_detail p {
+  font-size: 17px;
+  color: rgb(145, 143, 141);
+  font-family: "Heebo", sans-serif;
+  margin-bottom: 0;
+}
+.modern_img {
+  margin-top: 80px;
+}
+.modern_img img {
+  width: 70%;
+}
+.modern_detail a {
+  text-decoration: none;
+  color: #000;
+  font-family: var(--font-family);
+  border-bottom: solid 3px var(--color);
+}
+.modern_detail a:hover {
+  color: #cfa670;
+}
+/* ----------------------------------- */
+.number_page {
+  background: url(/img/page02.webp);
+}
+.number_page div {
+  text-align: center;
+}
+.layout_page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 50px 0px;
+}
+.layout_page div h3 {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.layout_page div p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 14px;
 }
