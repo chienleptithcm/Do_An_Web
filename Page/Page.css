@@ -197,3 +197,53 @@ body {
   font-family: var(--font-family);
   font-size: 14px;
 }
+/* ------------------------------------ */
+.staff_title h3{
+  font-size: 50px;
+  color: var(--color);
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.staff_title p{
+  font-size: 40px;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 40px;
+  text-align: center;
+  margin-top: 0;
+}
+.staff_items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px 80px;
+}
+.staff_items div{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.staff_items div img{
+  width: 100%;
+}
+.staff_items  div h2{
+  color: #232323;
+  margin-bottom: 0;
+  margin-top: 25px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+.staff_items  div h3{
+  margin-top: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+.staff_items div p{
+  font-family: var(--font-family);
+  font-size: 15px;
+  color:#777;
+}
+/* ---------------------------------------------- */
