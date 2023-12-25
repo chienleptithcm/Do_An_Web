@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Poppins:ital,wght@0,200;0,300;0,500;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=EB+Garamond&family=Heebo&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300&family=Oswald:wght@500&family=Poppins:ital,wght@0,200;0,300;0,500;1,200&family=Space+Grotesk&family=Tangerine:wght@700&display=swap");
 
 :root {
   --font-family: "Poppins", sans-serif;
@@ -38,3 +38,31 @@ body {
   margin-top: 20px;
 }
 /* ------ Viết CSS Dưới Này ------------ */
+.page{
+  color: #cfa670 !important;
+}
+.page_title{
+  background: url(/img/1.webp);
+  margin-top:80px;
+}
+.page_detail{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0px;
+}
+.page_detail h3{
+  font-size: 50px;
+  color:#fff;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+.page_detail p{
+  font-size: 40px;
+  color: #cfa670;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  margin-bottom: 50px;
+  margin-top: 0;
+}

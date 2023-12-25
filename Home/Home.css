@@ -31,6 +31,10 @@ body {
   color: #fcfbfb;
   line-height: 80px;
   font-size: 14px;
+  transition: 0.5s;
+}
+.side_bar-items a:hover{
+  color: #cfa670;
 }
 .side_bar-items {
   padding-left: 100px;
