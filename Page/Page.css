@@ -31,6 +31,9 @@ body {
 .side_bar-items {
   padding-left: 100px;
 }
+.side_bar-items a:hover{
+  color: #cfa670;
+}
 .side_bar-items i {
   font-size: 10px;
 }
@@ -172,6 +175,9 @@ body {
 .modern_detail a:hover {
   color: #cfa670;
 }
+.page_staff{
+  padding-bottom: 100px;
+}
 /* ----------------------------------- */
 .number_page {
   background: url(/img/page02.webp);
@@ -246,4 +252,152 @@ body {
   font-size: 15px;
   color:#777;
 }
+.dotted-line {
+  border: 1px dotted #cfa670; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
+  width: 100%; /* Độ dài của đường line */
+  height: 0;
+  margin-top: 38px;
+  margin-right: 10px;
+}
 /* ---------------------------------------------- */
+.footer {
+  background: #000 !important;
+}
+.footer_container{
+  padding-top:80px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%; /* Chia thành 2 cột bằng nhau */
+  margin: auto;
+  padding-bottom: 100px;
+}
+.rodich{
+  color: #696565;
+  text-align: center;
+  font-size:15px;
+  padding-left: 20px;
+}
+.rodich_title{
+  padding-bottom: 15px;
+}
+.rodich_icon{
+  margin-top: 30px;
+}
+.rodich_icon a{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #363636;
+  color: #696565;
+  margin-right: 10px;
+  font-size: 12px;
+  transition: 0.5s;
+}
+.rodich_icon a:hover{
+  background-color: #cfa670;
+  color: #fff;
+}
+.rodich_container{
+  width: 80%;
+  text-align: left;
+}
+.post
+{
+  color: #696565;
+}
+.post p{
+  border-bottom: solid 1px #303030;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.post h3{
+  color:#fff;
+  font-size: 18px;
+  font-family: var(--font-family);
+
+}
+.flickr{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.flickr_img{
+  display: grid;
+  grid-template-rows: repeat(2, auto); /* Ba hàng với chiều cao tự động */
+  grid-template-columns: repeat(3, 1fr); /* Hai cột với chiều rộng tự động chia đều */
+}
+.flickr h3{
+  color: #fff;
+  font-size: 18px;
+  padding-bottom:10px;
+}
+.flickr_img img{
+  width: 100%;
+}
+.flickr_img div{
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.opening_hours{
+  color: #636363;
+}
+.opening_hours div p{
+  padding: 15px 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.opening_hours a{
+  border-bottom: solid 2px #cfa670;
+  text-decoration: none;
+  font-family: var(--font-family);
+  color:#fff;
+  font-size: 16px;
+}
+.opening_hours a:hover{
+  color:#cfa670;
+}
+.opening_hours h3{
+  color: #fff;
+  font-size: 18px;
+}
+.opening_hours .discover_item{
+  padding-bottom: 0;
+  font-family: var(--font-family);
+}
+.opening_hours .discover_item .dotted-line{
+  margin-top: 30px;
+  margin-left: 5px;
+  border: dotted 1px #636363;
+}
+.discover_items-sub{
+  display: flex;
+}
+.dotted-line{
+  border: 1px dotted #696565; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
+  width: 100%; /* Độ dài của đường line */
+  height: 0;
+  margin-top: 38px;
+  margin-right: 10px;
+}
+/* --------------------------------------------- */
+.footer_contact{
+  background-color: #101010;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.footer_link{
+  text-align: right;
+  padding-right: 100px;
+}
+.footer_link a{
+  margin-right: 10px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+  font-family: var(--font-family);
+  font-size: 14px;
+  transition: 0.5s;
+}
+.footer_link a:hover{
+  color: #fff;
+}

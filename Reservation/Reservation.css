@@ -2,6 +2,7 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
+  --color: #cfa670;
 }
 
 body {
@@ -22,7 +23,9 @@ body {
   right: 0;
   z-index: 1;
 }
-
+.flag{
+  color: var(--color) !important;
+}
 .side_bar-items a {
   font-family: var(--font-family);
   text-decoration: none;
@@ -44,7 +47,9 @@ body {
   margin-left: 160px;
   margin-top: 20px;
 }
-
+#Home_index{
+  color: var(--color) !important;
+}
 .reservation {
   margin-top: 60px;
   position: relative;
@@ -171,10 +176,15 @@ h1, h3 {
   font-size: 40px;
   color: #000;
 }
+.info_reser{
+  font-family: var(--font-family);
+  color: #636363;
+}
 /* ------ Viết CSS Dưới Này ------------ */
 /* -------FOOTER ---------- */
 .footer {
   background: #000;
+  margin-top: 100px;
 }
 .footer_container{
   padding-top:80px;
