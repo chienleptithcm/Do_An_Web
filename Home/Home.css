@@ -454,7 +454,7 @@ body {
   padding-bottom: 150px;
 }
 .feedback_content{
-  padding-left: 50px;
+  padding-left: 100px;
 }
 .feedback_content .dotted-line{
   width: 95%;
@@ -479,6 +479,37 @@ body {
   font-family: var(--font-family);
   font-size: 14px;
   font-weight: 400;
+}
+.feebback_client{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.feebback_client .avatar{
+  margin-left: auto;
+  margin-right: auto;
+}
+.feebback_client .info h3{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+.feebback_client .info h2{
+  font-family: var(--font-family);
+  font-size: 15px;
+  color:#777;
+}
+.feebback_client .info p{
+  padding-top: 20px;
+  font-family: var(--font-family);
+  font-size: 15px;
+  width: 90%;
+  color:#777;
+}
+.feebback_client .avatar img{
+  border-radius: 10px;
+}
+.feedback_img img{
+  border-radius: 20px;
 }
 /* ------------- FIND US --------------- */
 .find_us {

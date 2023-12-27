@@ -175,6 +175,9 @@ a {
 .tag-list a {
     color: #151515;
 }
+.side_bar-items a:hover{
+  color: #cfa670;
+}
 /* -------FOOTER ---------- */
 .footer {
   background: #000;
@@ -316,4 +319,11 @@ a {
 }
 .footer_link a:hover{
   color: #fff;
+}
+.discover_items-sub p,
+.price {
+  padding-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
 }

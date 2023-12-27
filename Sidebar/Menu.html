@@ -26,7 +26,7 @@
       <a href="Page.html">Page <i class="fa-solid fa-chevron-down"></i></a>
       <a href="Blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
       <a href="Contact.html">Contact</a>
-      <a href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 13px;"></i></a>
+      <a onclick="nhapGiaTri()" href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 13px;"></i></a>
       <a href=""><i class="fa-solid fa-bag-shopping" style="font-size: 13px;"></i></a>
     </div>
   </div>
@@ -578,19 +578,19 @@
         <div class="discover_item">
           <div class="discover_items-sub">
             <p>Monday - Friday
-            <div class="dotted-line"></div> <span class="price">$12.95</span></p>
+            <div class="dotted-line"></div> <span class="price">24/7</span></p>
           </div>
         </div>
         <div class="discover_item">
           <div class="discover_items-sub">
             <p>Saturday
-            <div class="dotted-line"></div> <span class="price">$12.95</span></p>
+            <div class="dotted-line"></div> <span class="price">24/7</span></p>
           </div>
         </div>
         <div class="discover_item">
           <div class="discover_items-sub">
             <p>Sunday
-            <div class="dotted-line"></div> <span class="price">$12.95</span></p>
+            <div class="dotted-line"></div> <span class="price">24/7</span></p>
           </div>
         </div>
         <a href="./Reservation.html">Make Reservation</a>
@@ -613,6 +613,15 @@
       </div>
     </div>
   </div>
+  <script>
+    function hienThongBao() {
+      alert('Vui Lòng Nhập Đủ Thông Tin');
+  }
+  function nhapGiaTri() {
+    var giaTri = prompt("Nhập thong tin:");
+    console.log("Giá trị bạn vừa nhập là: " + giaTri);
+}
+  </script>
 </body>
 
 </html>

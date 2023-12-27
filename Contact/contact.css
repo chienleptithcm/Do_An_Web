@@ -40,6 +40,13 @@ body {
     margin-left: 160px;
     margin-top: 20px;
 }
+.discover_items-sub p,
+.price {
+  padding-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
 /* ------ Viết CSS Dưới Này ------------ */
 .contact__wrap {
     font-family: "Cabin", sans-serif;
@@ -288,4 +295,7 @@ body {
   }
   .footer_link a:hover{
     color: #fff;
+  }
+  .side_bar-items a:hover{
+    color: #cfa670;
   }

@@ -26,9 +26,8 @@
       <a href="Reservation.html">Reservation <i class="fa-solid fa-chevron-down"></i></a>
       <a class="page" href="Page.html">Page <i class="fa-solid fa-chevron-down"></i></a>
       <a href="Blog.html">Blog <i class="fa-solid fa-chevron-down"></i></a>
-      <a href="shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a>
       <a href="Contact.html">Contact</a>
-      <a href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 13px;"></i></a>
+      <a onclick="nhapGiaTri()" href=""><i class="fa-solid fa-magnifying-glass" style="font-size: 13px;"></i></a>
       <a href=""><i class="fa-solid fa-bag-shopping" style="font-size: 13px;"></i></a>
     </div>
   </div>
@@ -202,6 +201,15 @@
       </div>
     </div>
   </div>
+  <script>
+    function hienThongBao() {
+      alert('Vui Lòng Nhập Đủ Thông Tin');
+  }
+  function nhapGiaTri() {
+    var giaTri = prompt("Nhập thong tin:");
+    console.log("Giá trị bạn vừa nhập là: " + giaTri);
+}
+  </script>
 </body>
 
 </html>

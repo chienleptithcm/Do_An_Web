@@ -20,6 +20,13 @@ body {
   left: 0;
   right: 0;
 }
+.discover_items-sub p,
+.price {
+  padding-top: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
 .side_bar-items a {
   font-family: var(--font-family);
   text-decoration: none;

@@ -69,3 +69,7 @@ function toggleFoodList(foodListId) {
 window.onload = function() {
   toggleFoodList('food-list-1');
 }
+function nhapGiaTri() {
+  var giaTri = prompt("Nhập thong tin:");
+  console.log("Giá trị bạn vừa nhập là: " + giaTri);
+}
