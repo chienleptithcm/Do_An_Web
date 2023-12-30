@@ -699,9 +699,6 @@ body {
   margin-right: 10px;
   margin-bottom: 5px;
 }
-.flickr_img div:hover{
-  cursor: pointer;
-}
 .opening_hours {
   color: #636363;
 }
