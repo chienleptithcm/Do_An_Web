@@ -666,15 +666,14 @@ body {
   font-size: 14px;
   transition: 0.5s;
 }
+.post p:hover {
+  color:var(--color);
+}
 .post h3 {
   color: #fff;
   font-size: 18px;
   font-family: var(--font-family);
 
-}
-.post p:hover {
-  color:var(--color);
-  cursor: pointer;
 }
 .flickr {
   margin-right: 20px;

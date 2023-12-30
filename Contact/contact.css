@@ -299,3 +299,12 @@ body {
   .side_bar-items a:hover{
     color: #cfa670;
   }
+  .post p {
+    border-bottom: solid 1px #303030;
+    padding: 15px 0px;
+    font-size: 14px;
+    transition: 0.5s;
+  }
+  .post p:hover {
+    color:var(--color);
+  }
