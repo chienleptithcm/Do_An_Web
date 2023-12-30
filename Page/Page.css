@@ -38,7 +38,7 @@ body {
 .side_bar-items {
   padding-left: 100px;
 }
-.side_bar-items a:hover{
+.side_bar-items a:hover {
   color: #cfa670;
 }
 .side_bar-items i {
@@ -134,13 +134,18 @@ body {
   padding: 10px 0px;
 }
 /* ------------------------------ */
+hr {
+  background-color: #c2bebe;
+  width: 80%;
+  margin-top: 100px;
+}
 .modern {
 }
 .modern_contain {
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
   margin-bottom: 80px;
 }
 .modern_detail {
@@ -169,9 +174,11 @@ body {
 }
 .modern_img {
   margin-top: 80px;
+  margin-left: 40px;
 }
 .modern_img img {
   width: 70%;
+  border-radius: 10px;
 }
 .modern_detail a {
   text-decoration: none;
@@ -182,7 +189,7 @@ body {
 .modern_detail a:hover {
   color: #cfa670;
 }
-.page_staff{
+.page_staff {
   padding-bottom: 100px;
 }
 /* ----------------------------------- */
@@ -211,7 +218,7 @@ body {
   font-size: 14px;
 }
 /* ------------------------------------ */
-.staff_title h3{
+.staff_title h3 {
   font-size: 50px;
   color: var(--color);
   font-family: "Dancing Script", cursive;
@@ -220,7 +227,7 @@ body {
   text-align: center;
   margin-bottom: 0;
 }
-.staff_title p{
+.staff_title p {
   font-size: 40px;
   color: #000;
   font-family: "Oswald", sans-serif;
@@ -229,35 +236,35 @@ body {
   text-align: center;
   margin-top: 0;
 }
-.staff_items{
+.staff_items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0px 80px;
 }
-.staff_items div{
+.staff_items div {
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.staff_items div img{
+.staff_items div img {
   width: 100%;
 }
-.staff_items  div h2{
+.staff_items div h2 {
   color: #232323;
   margin-bottom: 0;
   margin-top: 25px;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
 }
-.staff_items  div h3{
+.staff_items div h3 {
   margin-top: 0;
   font-family: var(--font-family);
   font-size: 16px;
 }
-.staff_items div p{
+.staff_items div p {
   font-family: var(--font-family);
   font-size: 15px;
-  color:#777;
+  color: #777;
 }
 .dotted-line {
   border: 1px dotted #cfa670; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
@@ -270,27 +277,27 @@ body {
 .footer {
   background: #000 !important;
 }
-.footer_container{
-  padding-top:80px;
+.footer_container {
+  padding-top: 80px;
   width: 90%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%; /* Chia thành 2 cột bằng nhau */
   margin: auto;
   padding-bottom: 100px;
 }
-.rodich{
+.rodich {
   color: #696565;
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
   padding-left: 20px;
 }
-.rodich_title{
+.rodich_title {
   padding-bottom: 15px;
 }
-.rodich_icon{
+.rodich_icon {
   margin-top: 30px;
 }
-.rodich_icon a{
+.rodich_icon a {
   padding: 10px;
   border-radius: 50%;
   background-color: #363636;
@@ -299,85 +306,90 @@ body {
   font-size: 12px;
   transition: 0.5s;
 }
-.rodich_icon a:hover{
+.rodich_icon a:hover {
   background-color: #cfa670;
   color: #fff;
 }
-.rodich_container{
+.rodich_container {
   width: 80%;
   text-align: left;
 }
-.post
-{
+.post {
   color: #696565;
 }
-.post p{
+.post p {
   border-bottom: solid 1px #303030;
   padding: 15px 0px;
   font-size: 14px;
 }
-.post h3{
-  color:#fff;
+.post h3 {
+  color: #fff;
   font-size: 18px;
   font-family: var(--font-family);
-
+  transition: 0.5s;
 }
-.flickr{
+.post p:hover {
+  color: var(--color);
+}
+.flickr {
   margin-right: 20px;
   margin-left: 20px;
 }
-.flickr_img{
+.flickr_img {
   display: grid;
   grid-template-rows: repeat(2, auto); /* Ba hàng với chiều cao tự động */
-  grid-template-columns: repeat(3, 1fr); /* Hai cột với chiều rộng tự động chia đều */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Hai cột với chiều rộng tự động chia đều */
 }
-.flickr h3{
+.flickr h3 {
   color: #fff;
   font-size: 18px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
-.flickr_img img{
+.flickr_img img {
   width: 100%;
 }
-.flickr_img div{
+.flickr_img div {
   margin-right: 10px;
   margin-bottom: 5px;
 }
-.opening_hours{
+.opening_hours {
   color: #636363;
 }
-.opening_hours div p{
+.opening_hours div p {
   padding: 15px 0px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.opening_hours a{
+.opening_hours a {
   border-bottom: solid 2px #cfa670;
   text-decoration: none;
   font-family: var(--font-family);
-  color:#fff;
+  color: #fff;
   font-size: 16px;
 }
-.opening_hours a:hover{
-  color:#cfa670;
+.opening_hours a:hover {
+  color: #cfa670;
 }
-.opening_hours h3{
+.opening_hours h3 {
   color: #fff;
   font-size: 18px;
 }
-.opening_hours .discover_item{
+.opening_hours .discover_item {
   padding-bottom: 0;
   font-family: var(--font-family);
 }
-.opening_hours .discover_item .dotted-line{
+.opening_hours .discover_item .dotted-line {
   margin-top: 30px;
   margin-left: 5px;
   border: dotted 1px #636363;
 }
-.discover_items-sub{
+.discover_items-sub {
   display: flex;
 }
-.dotted-line{
+.dotted-line {
   border: 1px dotted #696565; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
   width: 100%; /* Độ dài của đường line */
   height: 0;
@@ -385,18 +397,18 @@ body {
   margin-right: 10px;
 }
 /* --------------------------------------------- */
-.footer_contact{
+.footer_contact {
   background-color: #101010;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: right;
 }
-.footer_link{
+.footer_link {
   text-align: right;
   padding-right: 100px;
 }
-.footer_link a{
+.footer_link a {
   margin-right: 10px;
   text-decoration: none;
   color: #777;
@@ -405,6 +417,6 @@ body {
   font-size: 14px;
   transition: 0.5s;
 }
-.footer_link a:hover{
+.footer_link a:hover {
   color: #fff;
 }

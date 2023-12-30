@@ -75,7 +75,11 @@ body {
   background-size: 100%;
   z-index: -2;
 }
-
+.title_table{
+  font-family: var(--font-family);
+  color:#888;
+  margin-top: 0;
+}
 .reservation_form {
   text-align: center;
   font-family: Arial;
@@ -93,7 +97,9 @@ body {
   margin-top: 150px;
   align-items: center;
 }
-
+.table h1{
+  margin-bottom: 0;
+}
 .table form{
   padding-bottom: 80px;
 }
@@ -101,7 +107,6 @@ body {
 .table table th, tr {
   color: #000;
   text-align: center;
-
 }
 
 .table input {
@@ -111,6 +116,7 @@ body {
   padding: 20px;
   align-items: center;
   margin-left: -55px;
+  font-family: var(--font-family);
 }
 
 .table button {
@@ -120,10 +126,15 @@ body {
   color: #fcfbfb;
   align-items: center;
   margin-left: -10px;
+  transition: 0.5s;
+  font-family: var(--font-family);
+  font-weight:lighter;
+  margin-top: 20px;
 }
 
 .table button:hover {
-  background-color: #ff9500;
+  background-color: var(--color);
+  border: none;
 }
 
 #note input {
@@ -187,7 +198,6 @@ h1, h3 {
   font-family: var(--font-family);
   color: #636363;
 }
-/* ------ Viết CSS Dưới Này ------------ */
 /* -------FOOTER ---------- */
 .footer {
   background: #000;

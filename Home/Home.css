@@ -53,19 +53,25 @@ body {
 .home_content {
 }
 /* img-list */
-.img_list {
-  height: 800px;
-  background-image: url(/img/pexels-daniel-reche-1556698.jpg);
+.img_list_01{
+  background-image: url(/img/bo-bit-tet-bang-noi-chien-khong-dau-1.jpg);
   background-size: cover;
+
+}
+.img_list {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+  text-align: center;
 }
 .img_list-content {
   color: #fcfbfb;
   width: 50%;
   text-align: center;
-  margin-bottom: 300px;
+  padding:250px 0px;
 }
 .img_list-content h3 {
   font-family: "Dancing Script", cursive;
@@ -658,11 +664,17 @@ body {
   border-bottom: solid 1px #303030;
   padding: 15px 0px;
   font-size: 14px;
+  transition: 0.5s;
 }
 .post h3 {
   color: #fff;
   font-size: 18px;
   font-family: var(--font-family);
+
+}
+.post p:hover {
+  color:var(--color);
+  cursor: pointer;
 }
 .flickr {
   margin-right: 20px;

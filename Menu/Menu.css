@@ -10,7 +10,7 @@ body {
   padding: 0;
   font-family: "Arial", sans-serif;
 }
-.menu_index{
+.menu_index {
   color: var(--color) !important;
 }
 .discover_items-sub p,
@@ -38,7 +38,7 @@ body {
   line-height: 80px;
   font-size: 14px;
 }
-.side_bar-items a:hover{
+.side_bar-items a:hover {
   color: #cfa670;
 }
 .side_bar-items {
@@ -52,11 +52,11 @@ body {
   margin-top: 20px;
 }
 /* ------ Viết CSS Dưới Này ------------ */
-.banner{
+.banner {
   position: relative;
 }
 
-.banner .img-banner{
+.banner .img-banner {
   width: 100%;
   height: 450px;
   background-image: url(/img/1.webp);
@@ -71,31 +71,36 @@ body {
   left: 0;
   width: 100%;
   height: 450px;
-  background-color: rgba(0, 0, 0, 0.2); /* Điều chỉnh màu và độ trong suốt của overlay */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Điều chỉnh màu và độ trong suốt của overlay */
 }
 
 .text-banner {
   position: absolute;
   z-index: 1;
-  top: 50%; 
-  left: 50%; 
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%); /* Đặt transform để căn giữa hoàn toàn */
   text-align: center; /* Căn giữa văn bản */
 }
 
-.text-banner h2{
+.text-banner h2 {
   font-size: 60px;
   color: #fcfbfb;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 72px;
   margin-bottom: 20px;
   margin-top: 150px;
 }
 
-.text-banner h3{
+.text-banner h3 {
   font-size: 55px;
   color: #cfa670;
-  font-family: 'Tangerine', cursive;
+  font-family: "Tangerine", cursive;
   margin-top: 0;
 }
 
@@ -110,64 +115,61 @@ body {
   box-sizing: border-box;
 }
 
-.s1, .m1{
+.s1,
+.m1 {
   font-size: 40px;
   color: #232323;
   font-family: Oswald, Arial, sans-serif;
   line-height: 24px;
 }
 
-.dish1 div{
-  font-size: 16px;
+.dish1 div {
+  font-size: 15px;
   font-family: Oswald, Arial, sans-serif;
   color: #232323;
-  line-height: 24px;
-  margin-right: 8px;
 }
 
-.l1{
+.l1 {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
 
-.bt1{
-  width: 25px;
+.bt1 {
   color: #ffffff;
   margin-top: 5px;
   line-height: 18px;
   padding: 0 10px;
   position: relative;
   text-transform: uppercase;
-  top: -4px;
-  background-color: #CFA670;
+  margin-top: 22px;
+  background-color: #cfa670;
   font-family: Cabin, Arial, sans-serif;
   border: none;
   font-size: 10px;
   height: 18px;
-  margin-right: 5px;
+  margin-right: 10px;
   text-align: center;
 }
 
 .dotted-line {
-  margin-top: 10px;
-  margin-right: 5px;
-  border: 1px dotted #d2d1d1; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
-  width: 275px; /* Độ dài của đường line */
-  height: 0; /* Đặt chiều cao là 0 để chỉ hiển thị đường line mà không chiếm không gian */
+  margin-top: 30px;
+  border: 1px dotted #d2d1d1; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */ /* Độ dài của đường line */
+  height: 0;
+  width: 70% !important; /* Đặt chiều cao là 0 để chỉ hiển thị đường line mà không chiếm không gian */
 }
 
-.cost{
+.cost {
   margin-left: 10px;
+  margin-top: 25px;
 }
-.t1{
+.t1 {
   color: #999999 !important;
   font-size: 16px;
   font-family: Cabin, Arial, sans-serif;
   line-height: 24px;
   margin-bottom: 45px;
 }
-
 
 .banner2 {
   position: relative;
@@ -288,31 +290,33 @@ body {
   font-size: 100px;
   line-height: 90px;
 }
+/* ------------------------- */
+
 /* -------FOOTER ---------- */
 .footer {
   background: #000 !important;
 }
-.footer_container{
-  padding-top:80px;
+.footer_container {
+  padding-top: 80px;
   width: 90%;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%; /* Chia thành 2 cột bằng nhau */
   margin: auto;
   padding-bottom: 100px;
 }
-.rodich{
+.rodich {
   color: #696565;
   text-align: center;
-  font-size:15px;
+  font-size: 15px;
   padding-left: 20px;
 }
-.rodich_title{
+.rodich_title {
   padding-bottom: 15px;
 }
-.rodich_icon{
+.rodich_icon {
   margin-top: 30px;
 }
-.rodich_icon a{
+.rodich_icon a {
   padding: 10px;
   border-radius: 50%;
   background-color: #363636;
@@ -321,85 +325,86 @@ body {
   font-size: 12px;
   transition: 0.5s;
 }
-.rodich_icon a:hover{
+.rodich_icon a:hover {
   background-color: #cfa670;
   color: #fff;
 }
-.rodich_container{
+.rodich_container {
   width: 80%;
   text-align: left;
 }
-.post
-{
+.post {
   color: #696565;
 }
-.post p{
+.post p {
   border-bottom: solid 1px #303030;
   padding: 15px 0px;
   font-size: 14px;
 }
-.post h3{
-  color:#fff;
+.post h3 {
+  color: #fff;
   font-size: 18px;
   font-family: var(--font-family);
-
 }
-.flickr{
+.flickr {
   margin-right: 20px;
   margin-left: 20px;
 }
-.flickr_img{
+.flickr_img {
   display: grid;
   grid-template-rows: repeat(2, auto); /* Ba hàng với chiều cao tự động */
-  grid-template-columns: repeat(3, 1fr); /* Hai cột với chiều rộng tự động chia đều */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Hai cột với chiều rộng tự động chia đều */
 }
-.flickr h3{
+.flickr h3 {
   color: #fff;
   font-size: 18px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
-.flickr_img img{
+.flickr_img img {
   width: 100%;
 }
-.flickr_img div{
+.flickr_img div {
   margin-right: 10px;
   margin-bottom: 5px;
 }
-.opening_hours{
+.opening_hours {
   color: #636363;
 }
-.opening_hours div p{
+.opening_hours div p {
   padding: 15px 0px;
   margin-top: 0;
   margin-bottom: 0;
 }
-.opening_hours a{
+.opening_hours a {
   border-bottom: solid 2px #cfa670;
   text-decoration: none;
   font-family: var(--font-family);
-  color:#fff;
+  color: #fff;
   font-size: 16px;
 }
-.opening_hours a:hover{
-  color:#cfa670;
+.opening_hours a:hover {
+  color: #cfa670;
 }
-.opening_hours h3{
+.opening_hours h3 {
   color: #fff;
   font-size: 18px;
 }
-.opening_hours .discover_item{
+.opening_hours .discover_item {
   padding-bottom: 0;
   font-family: var(--font-family);
 }
-.opening_hours .discover_item .dotted-line{
+.opening_hours .discover_item .dotted-line {
   margin-top: 30px;
   margin-left: 5px;
   border: dotted 1px #636363;
 }
-.discover_items-sub{
+.discover_items-sub {
   display: flex;
 }
-.dotted-line{
+.footer .dotted-line {
   border: 1px dotted #cfa670; /* 1px là độ dày của đường line, #000 là màu sắc của đường line */
   width: 100%; /* Độ dài của đường line */
   height: 0;
@@ -407,18 +412,18 @@ body {
   margin-right: 10px;
 }
 /* --------------------------------------------- */
-.footer_contact{
+.footer_contact {
   background-color: #101010;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: right;
 }
-.footer_link{
+.footer_link {
   text-align: right;
   padding-right: 100px;
 }
-.footer_link a{
+.footer_link a {
   margin-right: 10px;
   text-decoration: none;
   color: #777;
@@ -427,6 +432,6 @@ body {
   font-size: 14px;
   transition: 0.5s;
 }
-.footer_link a:hover{
+.footer_link a:hover {
   color: #fff;
 }
